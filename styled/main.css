@@ -1,4 +1,11 @@
+@font-face {
+    font-family: 'Bw Modelica Cyrillic DEMO', sans-serif;
+    src: url(/fonts/BwModelicaCyrillicDEMO-Regular.woff2);
+}
 
+* {
+    font-family: 'Bw Modelica Cyrillic DEMO', sans-serif;
+}
 .benefit-main {
     margin: 80px;
     
@@ -14,7 +21,7 @@
 }
 
 .badge {
-    font-family: 'Bw Modelica Cyrillic DEMO';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 10px;
@@ -26,15 +33,12 @@
 }
 
 .title {
-    font-family: 'Bw Modelica Cyrillic DEMO';
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
     line-height: 64px;
     color: #282828;
-    position: relative;
-    width: 100%;
-    height: 128px;
+    max-width: 726px;
     margin-bottom: 48px;
 }
 
@@ -53,6 +57,7 @@
 }
 .tabs-content.active {
     display: block;
+    
 }
 .tabs-item {
     display: flex;
@@ -61,7 +66,6 @@
 }
 
 .tabs-text {
-    font-family: 'Bw Modelica Cyrillic DEMO';
     font-weight: 600;
     font-size: 16px;
     
@@ -85,35 +89,33 @@
 
 .text-description {
     display: none;
-    font-family: 'Bw Modelica Cyrillic DEMO';
     font-weight: 600;
     font-size: 16px;
     line-height: 36px;
     color: #282828;
     max-width: 748px;
-    max-height: 148px;
+    
     margin-bottom: 56px;
 }
 .text-description.active {
     display: block;
 }
 .nav-item  {
+    position: relative;
     display: flex;
-    font-family: inherit;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
     color: #282828;
     text-align: center;
-
-    max-width: 200px;
+    width: 200px;
     height: 80px;
     border: 2px solid #1E232C;
-    padding: 16px;
     margin-left: 16px;
     margin-bottom: 40px;
     cursor: pointer;
+    padding: 14px;
 }
 
 .nav-item.active{
@@ -144,4 +146,27 @@
 
 .hide {
     display: none;
+}
+
+@media screen and (max-width: 1333px) {
+
+    .nav-items {
+        display: block;
+        justify-items: center;
+    }
+    .nav-item {
+        margin: 10px auto;
+    }
+
+    .logo {
+        margin-right: 24px;
+    }
+
+}
+
+@media screen and (max-width: 1165px) {
+    .logo {
+        margin-right: 120px;
+        margin-bottom: 20px;
+    }
 }
